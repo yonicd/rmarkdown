@@ -114,7 +114,7 @@ yaml_load_file_utf8 <- function(input, ...) {
 }
 
 file_name_without_shell_chars <- function(file) {
-  name <- gsub(.shell_chars_regex, '_', basename(file))
+  name <- gsub(.shell_chars_regex, '-', basename(file))
   dir <- dirname(file)
   if (nzchar(dir) && !identical(dir, "."))
     file.path(dir, name)
