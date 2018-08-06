@@ -1,3 +1,5 @@
+library(htmltools)
+
 context("dependencies")
 
 test_that("dependency merge is correct", {
